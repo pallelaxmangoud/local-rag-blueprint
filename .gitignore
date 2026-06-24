@@ -1,0 +1,6 @@
+venv/
+models/
+*.pdf
+*.zip
+__pycache__/
+.streamlit/
