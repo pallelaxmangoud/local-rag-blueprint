@@ -60,8 +60,9 @@ if uploaded_file:
             try:
                 client = Groq(api_key=api_key)
                 
+                # Updated to active, supported model
                 completion = client.chat.completions.create(
-                    model="llama3-8b-8192",
+                    model="llama-3.1-8b-instant",
                     messages=[
                         {"role": "system", "content": f"Use this context to answer: {best_context}"},
                         {"role": "user", "content": user_query}
